@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Idade 10 pessoas nova</title>
+  </head>
+  <body>
+    <script>
+      let nomeMaisNovo = "";
+      let menorIdade = Infinity;
+
+      for (let i = 1; i <= 10; i++) {
+        let nome = prompt(`Digite o nome da ${i}ª pessoa:`);
+        let idade = Number(prompt(`Digite a idade de ${nome}:`));
+
+        if (idade < menorIdade) {
+          menorIdade = idade;
+          nomeMaisNovo = nome;
+        }
+      }
+
+      document.write(
+        `A pessoa mais nova é: ${nomeMaisNovo} com ${menorIdade} anos.`,
+      );
+    </script>
+  </body>
+</html>

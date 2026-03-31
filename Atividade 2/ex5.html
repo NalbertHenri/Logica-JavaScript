@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade eleitoral</title>
+</head>
+<body>
+    <script>
+        let idade = Number(prompt("Informe sua iddade: "))
+
+        if (idade < 16) {
+            document.write("Não Eleitoral")
+        } else if (idade >= 18 && idade <=65) {
+            document.write("Eleitoral Obrigatorio")
+        } else {
+            document.write("Eleitoral Facultativo")
+        }
+    </script>
+</body>
+</html>

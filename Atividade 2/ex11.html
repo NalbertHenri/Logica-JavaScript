@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendedor</title>
+</head>
+<body>
+    <script>
+        let vendedor = prompt("Qual seu nome? ")
+        let salarioFixo = Number(prompt("Qual o seu salario Fixo? "))
+        let vendas = Number(prompt("Digite o total de vendas desse mês: "))
+
+        let comissao = vendas * 0.15
+        let salarioFinal = salarioFixo + comissao
+
+        document.write("Nome: " + vendedor)
+        document.write("<br> Salario Fixo: " + salarioFixo)
+        document.write("<br> Salario Final: " + salarioFinal)
+    </script>
+</body>
+</html>

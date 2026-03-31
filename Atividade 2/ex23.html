@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let soma0a100 = 0
+      let soma101a200 = 0
+      let somaMaior200 = 0
+
+
+      for (let i = 1; i <= 5; i++) {
+        let numero = Number(prompt("Informe um numero: "));
+
+        if (numero >= 0 && numero <= 100) {
+          soma0a100++;
+        } else if (numero >= 101 && numero <= 200) {
+          soma101a200++;
+        } else {
+          somaMaior200++;
+        }
+      }
+
+      document.write("Quantidade de numeros que estão entre 0 e 100: " + soma0a100);
+      document.write("<br> Quantidade de numeros que estão entre 101 e 200: " + soma101a200);
+      document.write("<br> Quantidade de numeros maior que 200: " + somaMaior200);
+    </script>
+  </body>
+</html>

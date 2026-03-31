@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cef</title>
+</head>
+<body>
+    <script>
+        let saldoMedio = Number(prompt("Informe seu saldo: "))
+        let credito = 0
+
+        if (saldoMedio <= 500) {
+            credito = 0
+        } else if (saldoMedio <= 1000) {
+            credito = saldoMedio * 0.30
+        } else if (saldoMedio <= 3000) {
+            credito = saldoMedio * 0.40
+        } else {
+            credito = saldoMedio * 0.50
+        }
+
+        document.write("Saldo Medio: " + saldoMedio)
+        document.write("<br> Creddito: " + credito)
+    </script>
+</body>
+</html>

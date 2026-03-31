@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+</head>
+<body>
+    <script>
+        let ipi = Number(prompt("Informe o ipi: "))
+    
+        let valor1 = Number(prompt("Digite o valor da Primeira Peça: "))
+        let peca1 = Number(prompt("Digite quantas peças: "))
+
+        let valor2 = Number(prompt("Digite o valor da Primeira Peça: "))
+        let peca2 = Number(prompt("Digite quantas peças: "))
+
+        let valorTotal = (valor1 * peca1 + valor2 * peca2) * (ipi/100 + 1)
+
+        document.write("Valor da peça: " + valor1)
+        document.write("<br> Quantidade: " + peca1)
+        document.write("<br> Valor da segunda peça: " + valor2)
+        document.write("<br> Quantidade: " + peca2)
+        document.write("<br> Valor Total: " + valorTotal.toFixed(1))
+
+    </script>
+</body>
+</html>
