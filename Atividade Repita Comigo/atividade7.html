@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let soma = 0;
+      let nota;
+
+      for (let i = 1; i <= 6; i++) {
+        nota = Number(prompt(`Digite a ${i}ª nota (0 a 10):`));
+        
+        while (nota < 0 || nota > 10) {
+          nota = Number(
+            prompt("Valor inválido! Digite uma nota entre 0 e 10:"),
+          );
+        }
+        soma += nota;
+      }
+
+      let media = soma / 6;
+
+      document.write("Média do aluno: " + media.toFixed(2));
+    </script>
+  </body>
+</html>
