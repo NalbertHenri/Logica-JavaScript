@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 38</title>
+  </head>
+  <body>
+    <script>
+        let numero = parseInt(prompt("Digite um numero inteiro:"));
+        let a = 0;
+        let b = 1;
+
+        for (; a <= numero; ) {
+            document.write(a + "<br>");
+            let temp = a + b;
+            a = b;
+            b = temp;
+        }
+    </script>
+  </body>
+</html>

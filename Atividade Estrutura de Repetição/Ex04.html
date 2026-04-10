@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let i = 1
+        let soma = 0
+        let numero;
+
+        while (i <= 5) {
+            numero = Number(prompt(`Digite o ${i}º número:`))
+            soma += numero
+            i++
+        }
+
+        let media = soma / 5
+        document.write("Media: " + media)
+    </script>
+</body>
+</html>
