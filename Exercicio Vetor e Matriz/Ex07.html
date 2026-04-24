@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero = []
+        let positivo = 0
+
+        for (let i = 0; i  < 10; i++) {
+            let valor = Number(prompt("Digite um numero: "))
+            numero.push(valor)
+        }
+
+        for (let i = 0; i < 10; i++) {
+            if (numero[i] > 0) {
+                positivo++
+            }
+        }
+
+        document.write("Quantidade de numeros positivos: " + positivo)
+    </script>
+</body>
+</html>

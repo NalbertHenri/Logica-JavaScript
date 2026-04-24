@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <h1>Faça um programa que leia 5 números inteiros e exiba-os na ordem inversa em que foram digitados.</h1>
+
+    <script>
+        let numeros = [];
+
+        // Leitura dos 5 números
+        for (let i = 0; i < 5; i++) {
+            let n = parseInt(prompt(`Digite o ${i + 1}º número:`));
+            numeros.push(n);
+        }
+
+        // Exibindo na ordem inversa
+        document.write("Números na ordem inversa: ");
+        for (let i = numeros.length - 1; i >= 0; i--) {
+            document.write(numeros[i]);
+        }
+    </script>
+</body>
+</html>

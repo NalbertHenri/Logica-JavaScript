@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Escreva um programa que leia 5 números inteiros e exiba o maior e o menor valor digitado.</p>
+
+    <script>
+        let num = []
+
+        for (let i = 0; i < 5; i++) {
+            let valor = Number(prompt("Digite um numero: "))
+            num.push(valor)
+        }
+
+        let maior = num[0]
+        let menor = num[0]
+
+        for (let i = 0; i < num.length; i++) {
+            if (num[í] > maior) {
+                maior = num[i]
+            } else {
+                menor = num[i]
+            }
+        }
+
+        document.write(maior)
+        document.write(menor)
+    </script>
+</body>
+</html>
